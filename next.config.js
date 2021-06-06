@@ -1,17 +1,20 @@
 module.exports = {
   publicRuntimeConfig: {
     siteMetaData: {
-      name: "Next.js + Tailwind CSS template",
+      name: "LuckyDip.run - BSV Lucky Dip",
       url:
         process.env.NODE_ENV === "development" ? "http://localhost:3000" : "/",
-      title: "Next.js + Tailwind CSS template",
-      description: "Next.js + Tailwind CSS template",
-      twitterHandle: "earvinpiamonte",
-      socialPreview: "/images/preview.png",
+      title: "Welcome to LuckyDip.run!",
+      description: "Lucky dips with a modern spin!",
+      // twitterHandle: "earvinpiamonte",
+      // socialPreview: "/images/preview.png",
     },
   },
   i18n: {
     locales: ["en-US"],
     defaultLocale: "en-US",
+  },
+  future: {
+    webpack5: true,
   },
 };

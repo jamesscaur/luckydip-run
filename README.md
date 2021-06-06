@@ -15,6 +15,13 @@
 
 ---
 
+## Quick start
+
+1. ```npm install```
+2. ```vercel dev``` or ```npm run dev```
+3. Visit [localhost:3000](https://localhost:3000)
+
+---
 ## Planned integrations
 
 * https://og-image.vercel.app/ for share images

@@ -1,9 +1,9 @@
 import getConfig from "next/config";
-import Head from "next/head";
+// import Head from "next/head";
 import Layout from "../components/layout";
 
 const { publicRuntimeConfig } = getConfig();
-const { title } = publicRuntimeConfig.siteMetaData;
+const { title, description, url } = publicRuntimeConfig.siteMetaData;
 
 const Home = () => {
   return (
@@ -11,73 +11,41 @@ const Home = () => {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <h1>{title}</h1>
-          <p>Welcome to my Next.js + Tailwind CSS starter template.</p>
+          <p>{description}</p>
 
-          <h2>Additions:</h2>
-          <ul>
-            <li>
-              Pre-configured <code>postcss.config.js</code>
-              .
-            </li>
-            <li>
-              Pre-configured{" "}
-              <code>tailwind.config.js</code>.
-            </li>
-            <li>
-              <code>global.css</code> that contains
-              Tailwind CSS directives.
-            </li>
-            <li>
-              <code>{"<Layout />"}</code> component.
-            </li>
-            <li>Purging styles using PurgeCSS.</li>
-          </ul>
-
-          <h2>Guides</h2>
+          <h2>Get started</h2>
           <ul>
             <li>
               <a
-                href="https://nextjs.org/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`${url}/share/1`}
                 className="app-link"
               >
-                Next.js
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://tailwindcss.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="app-link"
-              >
-                Tailwind CSS
+                Check out the first ever lucky dip on BSV!
               </a>
             </li>
           </ul>
 
-          <h2>Maintainer</h2>
+          <h2>Credits</h2>
           <p>
-            This project template is maintained by{" "}
+            This project is jointly maintained by{" "}
             <a
-              href="https://earvinpiamonte.com"
+              href="https://twitter.com/jamesscaur"
               target="_blank"
               rel="noopener noreferrer"
               className="app-link"
             >
-              @earvinpiamonte
+              @jamesscaur
             </a>{" "}
-            and publicly available on{" "}
+            and {" "}
             <a
-              href="https://github.com/earvinpiamonte/nextjs-tailwindcss-template"
+              href="https://twitter.com/ankh2054"
               target="_blank"
               rel="noopener noreferrer"
               className="app-link"
             >
-              GitHub
+              @ankh2054
             </a>
-            .
+            . We are planning to build some more cool stuff using BSV + RUN, follow us to stay tuned!
           </p>
         </div>
       </section>

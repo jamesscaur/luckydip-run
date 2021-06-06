@@ -10,10 +10,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
   const {
     url,
-    twitterHandle,
+    // twitterHandle,
     name,
     description,
-    socialPreview,
+    // socialPreview,
     title,
   } = publicRuntimeConfig.siteMetaData;
 
@@ -29,22 +29,22 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           content="summary_large_image"
           key="twitter_card"
         />
-        <meta
+        {/*<meta
           name="twitter:creator"
           content={twitterHandle}
           key="twitter_creator"
-        />
+        />*/}
         <meta name="twitter:title" content={name} key="twitter_title" />
         <meta
           name="twitter:description"
           content={description}
           key="twitter_description"
         />
-        <meta
+        {/*<meta
           name="twitter:image"
           content={`${url}/${socialPreview}`}
           key="twitter_image"
-        />
+        />*/}
 
         {/* Open Graph */}
         <meta property="og:url" content={`${url}${asPath}`} key="og_url" />
@@ -55,11 +55,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           content={description}
           key="og_description"
         />
-        <meta
+        {/*<meta
           property="og:image"
           content={`${url}/${socialPreview}`}
           key="og_image"
-        />
+        />*/}
         <meta property="og:image:width" content={`1200`} key="og_image_width" />
         <meta
           property="og:image:height"
