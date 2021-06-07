@@ -24,9 +24,9 @@
 ---
 ## Planned integrations
 
-* https://og-image.vercel.app/ for share images
+* Improve use of https://og-image.vercel.app/ to include prize images
 * https://github.com/ellisonleao/sharer.js for general sharing
-* https://github.com/twetch-inc/twetch-js for twetch integration
+* https://github.com/twetch-inc/twetch-js and maybe https://github.com/runonbitcoin/examples/blob/main/07-berries/index.js for twetch integration
 * https://github.com/tonicpow/tonicpow-js for tonicpow integration
 * Various BSV social medias if possible: 
     * Bitpost

@@ -1,11 +1,11 @@
 module.exports = {
   publicRuntimeConfig: {
     siteMetaData: {
-      name: "LuckyDip.run - BSV Lucky Dip",
+      name: "LuckyDip.run",
       url:
         process.env.NODE_ENV === "development" ? "http://localhost:3000" : "/",
-      title: "Welcome to LuckyDip.run!",
-      description: "Lucky dips with a modern spin!",
+      title: "Welcome to LuckyDip.run",
+      description: "Online lucky dips, powered by bitcoin.",
       // twitterHandle: "earvinpiamonte",
       // socialPreview: "/images/preview.png",
     },
