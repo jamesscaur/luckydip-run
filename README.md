@@ -1,5 +1,14 @@
 # BSV Lucky Dip
-*go try it out at [luckydip.run](https://luckydip.run)*
+
+LuckyDip is a modern take on a classic fundraising model!
+
+It uses the recently released [RUN protocol](https://run.network/) for [Bitcoin SV](https://bitcoinsv.com/en) to allow fundraisers to set up a "lucky dip" with a pool of mystery prizes (NFTs, or jigs are they are called in the RUN protocol).
+
+Bitcoin users can "draw" a prize from a lucky dip by sending money to an address that's hosting the lucky dip. That address, in turn, does a random selection of the prizes (NFTs) it has, and sends it (plus any change) to the user.
+
+Lucky dip creators have full control over the profits from their lucky dips, and can modify at any time the rules of their lucky dip.
+
+***go try it out at [luckydip.run](https://luckydip.run)***
 
 ## Thanks to...
 
@@ -16,6 +25,8 @@
 [Smashicons](https://smashicons.com/) and [Flaticon](https://www.flaticon.com/) for their free [video game icon pack](https://www.flaticon.com/packs/video-games-8).
 
 [@johnsorrentino](https://twitter.com/johnsorrentino) for his [favicon converter](https://favicon.io/favicon-converter/).
+
+[@tmm](https://github.com/tmm) for his great [React-̣Supabase API wrapper](https://www.npmjs.com/package/react-supabase)
 
 ---
 
@@ -168,6 +179,8 @@ response format:
 ---
 
 ## Database Set-Up
+
+Using [supabase.io](https://supabase.io), the open-source Firebase alternative.
 
 There are two tables to set up:
 * dips
