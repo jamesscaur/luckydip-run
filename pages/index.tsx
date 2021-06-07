@@ -1,5 +1,4 @@
 import getConfig from "next/config";
-// import Head from "next/head";
 import Layout from "../components/layout";
 
 const { publicRuntimeConfig } = getConfig();
@@ -9,8 +8,9 @@ const Home = () => {
   return (
     <Layout>
       <section className="py-12">
-        <div className="container mx-auto px-4">
-          <h1>{title}</h1>
+        <div className="container mx-auto px-4 ">
+          <img src="/icons/lineal/svg/001-block.svg" className="max-h-20 mb-8" />
+          <h1 className="text-6xl my-8">{title}</h1>
           <p>{description}</p>
 
           <h2>Get started</h2>
@@ -45,8 +45,9 @@ const Home = () => {
             >
               @ankh2054
             </a>
-            . We are planning to build some more cool stuff using BSV + RUN, follow us to stay tuned!
+            .
           </p>
+          <p>We are planning to build some more cool stuff using BSV + RUN, follow us to stay tuned!</p>
         </div>
       </section>
     </Layout>

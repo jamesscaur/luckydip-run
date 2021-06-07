@@ -9,22 +9,26 @@
 /* Write your own custom component styles here */
 p {
   @apply mb-3;
+  @apply text-white;
 }
 
 h1 {
   @apply text-4xl;
   @apply mb-3;
+  @apply text-white;
 }
 
 h2 {
-  @apply text-xl;
-  @apply mb-3;
+  @apply text-2xl;
+  @apply mb-4;
+  @apply text-white;
 }
 
 ul {
   @apply list-disc;
   @apply list-inside;
   @apply mb-3;
+  @apply text-white;
 }
 
 code {
@@ -34,7 +38,8 @@ code {
 }
 
 .app-link {
-  @apply text-blue-700;
+  @apply text-white;
+  @apply underline;
   @apply font-medium;
 }
 
@@ -47,3 +52,10 @@ code {
 /* Stop purging. */
 
 /* Your own custom utilities */
+section {
+  @apply from-yellow-900;
+  @apply via-yellow-700;
+  @apply to-yellow-400;
+  @apply bg-gradient-to-tr;
+  @apply min-h-screen;
+}

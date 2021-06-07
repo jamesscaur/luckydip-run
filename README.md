@@ -13,6 +13,10 @@
 
 [@runonbitcoin](https://github.com/runonbitcoin) for their [code examples](https://github.com/runonbitcoin/examples) and for hosting the first [RUN hackathon](https://run.network/hackathon/). Also thanks to other sponsors [RelayX](https://relayx.io/) and [CoinGeek](https://coingeek.com/).
 
+[Smashicons](https://smashicons.com/) and [Flaticon](https://www.flaticon.com/) for their free [video game icon pack](https://www.flaticon.com/packs/video-games-8).
+
+[@johnsorrentino](https://twitter.com/johnsorrentino) for his [favicon converter](https://favicon.io/favicon-converter/).
+
 ---
 
 ## Quick start
