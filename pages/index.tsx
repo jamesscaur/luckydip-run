@@ -1,8 +1,9 @@
 import getConfig from "next/config";
 import Layout from "../components/layout";
+import Link from 'next/link'
 
 const { publicRuntimeConfig } = getConfig();
-const { title, description, url } = publicRuntimeConfig.siteMetaData;
+const { title, description } = publicRuntimeConfig.siteMetaData;
 
 const Home = () => {
   return (
@@ -13,11 +14,18 @@ const Home = () => {
           <h1>{title}</h1>
           <p>{description}</p>
 
+          <iframe width="100%" height="315" src="https://streamanity.com/embed/EJu1s0CPSmfj" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className="my-6 max-w-lg"></iframe>
+          <Link href='/about'>
+              <button type="button" className="text-blue-700 bg-white hover:bg-gray-100">
+                  About LuckyDip.run
+              </button>
+          </Link>
+          
           <h2>Get started</h2>
           <ul>
             <li>
               <a
-                href={`${url}/share/2`}
+                href={`/share/2`}
                 className="app-link"
               >
                 Check out the first ever lucky dip on BSV!

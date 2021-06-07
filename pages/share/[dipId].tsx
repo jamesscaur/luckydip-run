@@ -61,6 +61,11 @@ const DipPage = () => {
             <button type="button" className="bg-blue-500 hover:bg-blue-600">
               About LuckyDip.run
             </button>
+            <Link href='/'>
+                <button type="button" className="bg-blue-500 hover:bg-blue-600">
+                    Home
+                </button>
+            </Link>
           </Link>
           {/*<Link href={`/api/dip/${dipId}`}>
             <button type="button" className="bg-blue-500 hover:bg-blue-600">
