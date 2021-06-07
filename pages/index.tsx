@@ -10,14 +10,14 @@ const Home = () => {
       <section className="py-12">
         <div className="container mx-auto px-4 ">
           <img src="/icons/lineal/svg/001-block.svg" className="max-h-20 mb-8" />
-          <h1 className="text-6xl my-8">{title}</h1>
+          <h1>{title}</h1>
           <p>{description}</p>
 
           <h2>Get started</h2>
           <ul>
             <li>
               <a
-                href={`${url}/share/1`}
+                href={`${url}/share/2`}
                 className="app-link"
               >
                 Check out the first ever lucky dip on BSV!

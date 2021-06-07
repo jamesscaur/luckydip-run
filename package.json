@@ -8,16 +8,18 @@
     "start": "next start"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^1.13.1",
     "next": "^10.0.3",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-supabase": "^0.1.9"
   },
   "devDependencies": {
     "@types/node": "^14.14.27",
     "@types/react": "^17.0.2",
     "autoprefixer": "^10.2.5",
     "postcss": "^8.2.15",
-    "stylelint-config-recommended": "^5.0.0",
+    "stylelint-config-recommended": "^2.2.0",
     "tailwindcss": "^2.1.2",
     "typescript": "^4.1.5"
   }

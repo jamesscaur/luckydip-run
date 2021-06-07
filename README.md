@@ -108,6 +108,7 @@ response format:
         ticketsNeeded: number,
         donor?: string,
         imgTxId?: string,
+        emoji?: string,
         description? string,
         url?: string,
         winner?: string,
@@ -143,6 +144,7 @@ response format:
         ticketsNeeded: number,
         donor?: string,
         imgTxId?: string,
+        emoji?: string,
         description? string,
         url?: string,
         winner: string,
@@ -343,9 +345,17 @@ e.g. ```Jack Daniels```
 
 **imgTxId: varchar**
 
-*transaction . using type `text` as it supports UTF-8 content like emojis. [see an example here.](https://www.bitcoinfiles.org/t/e605923f307c0fd02957fed0b4a15af550219207a8b6fd393ee202afed98e504)*
+*transaction hash where an image was uploaded. [see an example here.](https://www.bitcoinfiles.org/t/e605923f307c0fd02957fed0b4a15af550219207a8b6fd393ee202afed98e504)*
 
 e.g. ```e605923f307c0fd02957fed0b4a15af550219207a8b6fd393ee202afed98e504```
+
+---
+
+**emoji: text**
+
+*transaction . using type `text` as it supports UTF-8 content like emojis.
+
+e.g. ```🐮```
 
 ---
 

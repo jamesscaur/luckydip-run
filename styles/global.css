@@ -14,12 +14,14 @@ p {
 
 h1 {
   @apply text-4xl;
-  @apply mb-3;
   @apply text-white;
+  @apply text-6xl;
+  @apply my-8;
 }
 
 h2 {
   @apply text-2xl;
+  @apply mt-8;
   @apply mb-4;
   @apply text-white;
 }
@@ -53,9 +55,32 @@ code {
 
 /* Your own custom utilities */
 section {
-  @apply from-yellow-900;
-  @apply via-yellow-700;
-  @apply to-yellow-400;
+  @apply from-blue-900;
+  @apply to-blue-800;
   @apply bg-gradient-to-tr;
   @apply min-h-screen;
+}
+
+button {
+  @apply focus:outline-none;
+  @apply py-2;
+  @apply px-4;
+  @apply text-white;
+  @apply font-semibold;
+  @apply rounded-lg;
+  @apply shadow-md;
+  @apply mr-4;
+  @apply my-2;
+}
+
+.prize {
+  @apply bg-blue-500;
+  @apply h-12;
+  @apply rounded-md;
+  @apply flex;
+  @apply items-center;
+  @apply justify-center;
+  @apply text-white;
+  @apply text-2xl;
+  @apply font-extrabold
 }
