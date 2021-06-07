@@ -26,8 +26,9 @@
 3. Visit [localhost:3000](https://localhost:3000)
 
 ---
-## Planned integrations
+## Integrations
 
+* ~~OG Images via https://og-image.vercel.app~~
 * Improve use of https://og-image.vercel.app/ to include prize images
 * https://github.com/ellisonleao/sharer.js for general sharing
 * https://github.com/twetch-inc/twetch-js and maybe https://github.com/runonbitcoin/examples/blob/main/07-berries/index.js for twetch integration
@@ -35,7 +36,7 @@
 * Various BSV social medias if possible: 
     * Bitpost
     * Relica (relies on image)
-    * Streamanity (maybe just the about page)
+    * ~~Streamanity (maybe just the about page)~~
     * Koalament (perhaps just posting a comment or easter egg on each page)
 
 ---
@@ -55,9 +56,9 @@ luckyDip.draw(dipId) // public: detects how much money has been sent, draws a ji
 
 ---
 
-## API
+## API (not done yet)
 
-This is used internally by the app, but can also be used by other front-ends or bots. I probably won't be able to get all these features added by the end of the hackathon, but here's hoping!
+This is basically a wrapper/middleware around Supabase's API. Designed to both be used internally by the app, and also in other front-ends or bots. I couldn't get all this added in time for the hackathon end, but I think it illustrates the data structure I'm aiming for.
 
 **GET /dips**
 and **GET dip/id,id,id**
@@ -265,7 +266,7 @@ e.g.
 
 *what the lucky dip is raising money for. can be null if there's no reason.*
 
-e.g. ```prostate cancer```
+e.g. ```Against Malaria```
 
 ---
 
@@ -286,11 +287,11 @@ e.g.
 // a free dip
 [{"reason":null,"address":null,"percent":0,"fixedFeeDuro":0}]
 
-// an example where a prostate cancer foundation with address `1FaGzGL2PssHn1P3wMYS6FG8uv652zhUbr` recieves 100% of the prize sale after fixed fees are deducted (and there are no other payees with fixed fees, so it will be 100% of the sale.)
-[{"reason":"prostate cancer","address":"1FaGzGL2PssHn1P3wMYS6FG8uv652zhUbr","percent":100,"fixedFeeDuro":0}]
+// an example where a Against Malaria foundation with address `1FaGzGL2PssHn1P3wMYS6FG8uv652zhUbr` recieves 100% of the prize sale after fixed fees are deducted (and there are no other payees with fixed fees, so it will be 100% of the sale.)
+[{"reason":"Against Malaria","address":"1FaGzGL2PssHn1P3wMYS6FG8uv652zhUbr","percent":100,"fixedFeeDuro":0}]
 
 // an example identical to before, except where 400 Đ - 0.002 BSV - approximately 35c - are deducted for website hosting.
-[{"reason":"prostate cancer","address":"1FaGzGL2PssHn1P3wMYS6FG8uv652zhUbr","percent":100,"fixedFeeDuro":0}, {"reason":"website hosting","address":"16ZtbzKFp9mUb8oae6Ly94Ya6CkP7SVAMH","percent":0,"fixedFeeDuro":400}]
+[{"reason":"Against Malaria","address":"1FaGzGL2PssHn1P3wMYS6FG8uv652zhUbr","percent":100,"fixedFeeDuro":0}, {"reason":"website hosting","address":"16ZtbzKFp9mUb8oae6Ly94Ya6CkP7SVAMH","percent":0,"fixedFeeDuro":400}]
 ```
 
 ---
@@ -353,7 +354,7 @@ e.g. ```e605923f307c0fd02957fed0b4a15af550219207a8b6fd393ee202afed98e504```
 
 **emoji: text**
 
-*transaction . using type `text` as it supports UTF-8 content like emojis.
+*emoji of the prize. using type `text` as it supports UTF-8 content like emojis.
 
 e.g. ```🐮```
 
@@ -363,7 +364,7 @@ e.g. ```🐮```
 
 *description of the prize. using type `text` as it supports UTF-8 content like emojis*
 
-e.g. ```A digital fire-breathing dragon.```
+e.g. ```Seth's favorite type of cow.```
 
 ---
 
