@@ -13,8 +13,7 @@ const Home = () => {
           <img src="/icons/lineal/svg/001-block.svg" className="max-h-20 mb-8" />
           <h1>{title}</h1>
           <p>{description}</p>
-
-          <iframe width="100%" height="315" className="max-w-lg w-6/12" src="https://streamanity.com/embed/EJu1s0CPSmfj" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <iframe width="375" height="300" src="https://streamanity.com/embed/EJu1s0CPSmfj" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className="my-6"></iframe>
           <Link href='/about'>
               <button type="button" className="text-blue-700 bg-white hover:bg-gray-100">
                   About LuckyDip.run
