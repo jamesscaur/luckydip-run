@@ -67,7 +67,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         />
         <meta
           name="twitter:image"
-          content={`${socialPreview}`}
+          content={socialPreview}
           key="twitter_image"
         />
 
@@ -82,7 +82,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         />
         <meta
           property="og:image"
-          content={`${socialPreview}`}
+          content={socialPreview}
           key="og_image"
         />
         <meta property="og:image:width" content={`1200`} key="og_image_width" />

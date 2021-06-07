@@ -39,9 +39,12 @@ code {
   @apply rounded;
 }
 
+a {
+  @apply underline;
+}
+
 .app-link {
   @apply text-white;
-  @apply underline;
   @apply font-medium;
 }
 
