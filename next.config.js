@@ -3,7 +3,7 @@ module.exports = {
     siteMetaData: {
       name: "LuckyDip.run",
       url:
-        process.env.NODE_ENV === "development" ? "http://localhost:3000" : process.env.DEPLOY_URL,
+        process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://www.luckydip.run",
       title: "Welcome to LuckyDip.run",
       description: "Online lucky dips, powered by bitcoin.",
       // twitterHandle: "earvinpiamonte",

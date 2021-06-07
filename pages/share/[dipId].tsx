@@ -33,7 +33,7 @@ const DipPage = () => {
 
   const dip = dipQuery.data.filter((row) => `${row.dipId}` === dipId)[0];
   let prizes = {};
-  const jigs = jigQuery.data.filter((row) => `${row.includedInDip}` === dipId).forEach(jig => {
+  jigQuery.data.filter((row) => `${row.includedInDip}` === dipId).forEach(jig => {
     prizes[jig.jigId] = jig
   });
 
@@ -50,6 +50,11 @@ const DipPage = () => {
   const ticketPriceUsd = 0.000005 * dip.ticketPriceDuro * bsvUsd;
   const fiveDollarsWorth = Math.ceil(5 / ticketPriceUsd);
 
+
+  const buy = (quantity) => {
+    alert("Buy " + quantity + " tickets: $" + ticketPriceUsd*quantity)
+  }
+
   return (
     <Layout>
       <section className="py-12">
@@ -61,11 +66,11 @@ const DipPage = () => {
             <button type="button" className="bg-blue-500 hover:bg-blue-600">
               About LuckyDip.run
             </button>
-            <Link href='/'>
-                <button type="button" className="bg-blue-500 hover:bg-blue-600">
-                    Home
-                </button>
-            </Link>
+          </Link>
+          <Link href='/'>
+            <button type="button" className="bg-blue-500 hover:bg-blue-600">
+              Home
+            </button>
           </Link>
           {/*<Link href={`/api/dip/${dipId}`}>
             <button type="button" className="bg-blue-500 hover:bg-blue-600">
@@ -74,13 +79,13 @@ const DipPage = () => {
           </Link>*/}
           <h2 className="my-8">This <Link href="/about#fairness">(provably fair)</Link> lucky dip is fundraising for <strong>{dip.cause}.</strong></h2>
           <p className="text-lg">Ticket Price: {dip.ticketPriceDuro} Đ (~${ticketPriceUsd})</p>
-          <button type="button" className="text-white bg-gradient-to-b from-red-600 to-red-800 hover:from-red-700 hover:to-red-900">
+          <button type="button" className="text-white bg-gradient-to-b from-red-600 to-red-800 hover:from-red-700 hover:to-red-900" onClick={e => buy(1)}>
             Buy a ticket (~${ticketPriceUsd})
           </button>
-          <button type="button" className="text-blue-700 bg-white hover:bg-gray-100">
+          <button type="button" className="text-blue-700 bg-white hover:bg-gray-100" onClick={e => buy(2)}>
             Buy 2 tickets (~${ticketPriceUsd * 2})
           </button>
-          <button type="button" className="text-blue-700 bg-white hover:bg-gray-100">
+          <button type="button" className="text-blue-700 bg-white hover:bg-gray-100" onClick={e => buy(fiveDollarsWorth)}>
             Buy {fiveDollarsWorth} tickets (~${ticketPriceUsd * fiveDollarsWorth})
           </button>
           <h2>Prizes:</h2>
